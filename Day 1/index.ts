@@ -13,8 +13,7 @@ right.sort((a, b) => a - b);
 let sum = 0;
 
 for (let i = 0; i < points.length; i++) {
-    console.log(left[i], right[i], left[i] - right[i]);
-    sum += Math.abs(left[i] - right[i]);
+  sum += Math.abs(left[i] - right[i]);
 }
 
 console.log(sum);
