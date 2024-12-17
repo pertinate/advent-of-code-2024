@@ -7,9 +7,8 @@ const points = lines.map((entry) =>
 );
 
 console.log(points.reduce((acc, next) => {
-  let safe = true;
   console.log(next);
-  let expectPositive = (next[0] - next[1]) > 0;
+  const expectPositive = (next[0] - next[1]) > 0;
   for (let i = 0; i < next.length - 1; i++) {
     const magnitude = next[i] - next[i + 1];
     if (
